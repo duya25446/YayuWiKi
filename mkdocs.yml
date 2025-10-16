@@ -122,24 +122,8 @@ extra:
 # 导航结构
 nav:
   - 首页: index.md
-  - 快速开始:
-    - 简介: getting-started/introduction.md
-    - 安装指南: getting-started/installation.md
-  - 产品文档:
-    - 概述: products/overview.md
-    - 功能特性: products/features.md
-  - API 文档:
-    - API 参考: api/reference.md
   - English:
     - Home: en/index.md
-    - Getting Started:
-      - Introduction: en/getting-started/introduction.md
-      - Installation: en/getting-started/installation.md
-    - Products:
-      - Overview: en/products/overview.md
-      - Features: en/products/features.md
-    - API:
-      - Reference: en/api/reference.md
 
 # 版权信息
 copyright: Copyright &copy; 2025 Your Company
