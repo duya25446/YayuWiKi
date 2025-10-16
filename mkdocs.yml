@@ -1,0 +1,146 @@
+site_name: YayuWiki - 企业产品文档
+site_description: 企业产品知识库和技术文档
+site_author: Your Company
+site_url: https://duya25446.github.io/YayuWiKi/  # 根据您的 GitHub 用户名调整
+
+# 仓库配置
+repo_name: YayuWiKi
+repo_url: https://github.com/duya25446/YayuWiKi  # 根据您的 GitHub 用户名调整
+edit_uri: edit/main/docs/
+
+# 主题配置
+theme:
+  name: material
+  language: zh  # 默认语言为中文
+  
+  # 颜色方案
+  palette:
+    # 浅色模式
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  
+  # 字体配置
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  # 功能特性
+  features:
+    - navigation.instant      # 即时加载
+    - navigation.tracking     # 锚点跟踪
+    - navigation.tabs         # 导航标签
+    - navigation.sections     # 导航章节
+    - navigation.top          # 返回顶部按钮
+    - search.suggest          # 搜索建议
+    - search.highlight        # 搜索高亮
+    - search.share            # 搜索分享
+    - content.code.copy       # 代码复制按钮
+    - content.code.annotate   # 代码注释
+  
+  # 图标
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/github
+
+# 插件配置
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'  # 支持中文搜索
+      lang:
+        - zh
+        - en
+
+# Markdown 扩展
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 额外配置
+extra:
+  # 语言切换
+  alternate:
+    - name: 简体中文
+      link: /YayuWiKi/
+      lang: zh
+    - name: English
+      link: /YayuWiKi/en/
+      lang: en
+  
+  # 社交链接（可选）
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/duya25446/YayuWiKi
+
+# 导航结构
+nav:
+  - 首页: index.md
+  - 快速开始:
+    - 简介: getting-started/introduction.md
+    - 安装指南: getting-started/installation.md
+  - 产品文档:
+    - 概述: products/overview.md
+    - 功能特性: products/features.md
+  - API 文档:
+    - API 参考: api/reference.md
+  - English:
+    - Home: en/index.md
+    - Getting Started:
+      - Introduction: en/getting-started/introduction.md
+      - Installation: en/getting-started/installation.md
+    - Products:
+      - Overview: en/products/overview.md
+      - Features: en/products/features.md
+    - API:
+      - Reference: en/api/reference.md
+
+# 版权信息
+copyright: Copyright &copy; 2025 Your Company
+
