@@ -1,5 +1,5 @@
-site_name: YayuWiki - 企业产品文档
-site_description: 企业产品知识库和技术文档
+site_name: YayuWiki - 鸦羽科技产品文档
+site_description: 鸦羽科技产品知识库和技术文档
 site_author: Your Company
 site_url: https://duya25446.github.io/YayuWiKi/  # 根据您的 GitHub 用户名调整
 
@@ -118,6 +118,9 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/duya25446/YayuWiKi
+    - icon: material/storefront
+      link: https://yayutech.taobao.com
+      name: 淘宝店铺
 
 # 导航结构
 nav:
