@@ -125,8 +125,10 @@ extra:
 # 导航结构
 nav:
   - 首页: index.md
+  - 产品: products.md
   - English:
     - Home: en/index.md
+    - Products: en/products.md
 
 # 版权信息
 copyright: Copyright &copy; 2025 Your Company
